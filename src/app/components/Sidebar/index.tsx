@@ -1,4 +1,5 @@
 import { Search } from 'lucide-react'
+
 import Logo from './Logo'
 
 export function Sidebar() {
