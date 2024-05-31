@@ -9,6 +9,8 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
+    "@radix-ui/react-tabs": "^1.0.4",
+    "framer-motion": "^11.2.10",
     "lucide-react": "^0.379.0",
     "next": "14.2.3",
     "react": "^18",
