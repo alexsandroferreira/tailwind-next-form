@@ -1,3 +1,4 @@
+import { Input } from './components/input'
 import SettingsTabs from './components/SettingsTabs'
 export default function Home() {
   return (
@@ -6,12 +7,10 @@ export default function Home() {
 
       <SettingsTabs />
 
-      <div className="mt-6 flex flex-col ">
+      <div className="mt-6 flex flex-col">
         <div className="flex items-center justify-between border-b border-zinc-200 pb-5">
-          <div className="">
-            <h2 className="text-zinc-9000 text-lg font-medium">
-              Personal Info
-            </h2>
+          <div className="space-y-1">
+            <h2 className="text-lg font-medium text-zinc-900">Personal Info</h2>
             <span className="text-sm text-zinc-500">
               Uptade your photo and personal details here.
             </span>
@@ -34,8 +33,25 @@ export default function Home() {
           </div>
         </div>
 
-        <form id="settings" action="" className="mt-6 flex w-full flex-col  ">
-          forms
+        <form
+          id="settings"
+          action=""
+          className="mt-6 flex w-full flex-col gap-5"
+        >
+          <div className="grid grid-cols-form gap-3">
+            <label
+              htmlFor="firstName"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Name
+            </label>
+            <div className="grid grid-cols-2 gap-6 ">
+              <Input.Root>
+                <Input.Control defaultValue="João" />
+              </Input.Root>
+            </div>
+            <div />
+          </div>
         </form>
       </div>
     </>
