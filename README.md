@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  Forms Responsive with Tailwind and Nextjs
+![](https://github.com/alexsandroferreira/tailwind-next-form/workflows/CHANGELOG%20Generator/badge.svg)
+[![Release](https://img.shields.io/github/v/release/alexsandroferreira/tailwind-next-form?color=lgreen)](https://github.com/alexsandroferreira/tailwind-next-form/releases)
 
-## Getting Started
 
-First, run the development server:
+O projeto Forms Responsive com Next e Tailwind tem como objetivo aproveitar o conhecimento adquirido em React JS e aprimorar a estilização e a responsividade dos componentes com Tailwind.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ Utilizaremos Framer Motion para implementar algumas animações.
+ 
+  Além disso, será usada integração contínua para automatizar o versionamento de código com a biblioteca Release-it.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Adições pessoais para melhor desenvolvimento do projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Integração contínua para automatização do changelog.
+- Lint seguindo o guia de estilo da rocketseat/node.
+- Automação através do Husky:
+    - Script de lint para correção de erros.
+    - Script de verificação de commits usando o formato convencional.
+- Plugin de lint para organização dos imports.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Tabela de Conteúdos
 
-To learn more about Next.js, take a look at the following resources:
+- [Tecnologias](#tecnologias)
+- [Instalação e Configuração](#instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o)
+  - [Requisitos](#requisitos)
+  - [Instalação](#instala%C3%A7%C3%A3o)
+- [Licença](#licen%C3%A7a)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tecnologias 🛠️
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Este projeto foi construído com as seguintes tecnologias:
 
-## Deploy on Vercel
+- [Node.js »](https://nodejs.org)
+- [Typescript »](https://www.typescriptlang.org)
+- [Zod »](https://zod.dev/)
+- [Eslint »](https://eslint.org/docs/latest/)
+- [Eslint »](https://github.com/lydell/eslint-plugin-simple-import-sort)
+- [@eslint-plugin-simple-import-sort »](https://github.com/Rocketseat/eslint-config-rocketseat)
+- [husky »](https://typicode.github.io/husky/)
+- [Commitlint »](https://commitlint.js.org/)
+- [release-it »](https://github.com/release-it/release-it)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Instalação e configuração
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Requisitos
+
+- [Node.js »](https://nodejs.org/en/download) na sua versão LTS
+- Extensão do ESlint instalada no vs code
+- Para permitir que o changelog rode automaticamente, verifique as configurações do repositório na aba Settings -> Actions -> General Workflow Permissions e marque a opção de permissões de leitura e escrita (Read and Write Permissions).
+
+### Requisitos funcionais
+
+- [ ] Responsivdade;
+- [ ] Modo Dark;
+- [ ] Label trigger em todos inputs;
+- [x] Animações;
+
+### Regras de negócio
+
+
+
+### Requisitos não-funcionais
+
+
+## Instalação
+
+1. Clone o projeto: `git clone https://github.com/alexsandroferreira/fastify-node-api-template.git`.
+2. Instale as dependências: `npm install`.
+3. Para iniciar a aplicação execute `npm run build` e `npm run start`.
+4. Para testar aplicação sem api usar o arquivo `attendees` localizado em `data`
