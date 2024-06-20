@@ -1,7 +1,11 @@
+'use client'
 import React, { type ComponentProps } from 'react'
+
+import { useFileInput } from './Root'
 
 export type ControlProps = ComponentProps<'input'>
 
 export function Control(props: ControlProps) {
-  return <input type="file" className="sr-only" id="photoFile" {...props} />
+  const { id } = useFileInput()
+  return <input type="file" className="sr-only" id={id} {...props} />
 }
