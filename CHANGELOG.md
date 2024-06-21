@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.2.0...0.3.0) (2024-06-21)
+
+
+### Funcionalidades | 🏁
+
+* add context for files and preview img ([bf2d3f9](https://github.com/alexsandroferreira/tailwind-next-form/commit/bf2d3f9064a7e6c4b48b281fd196d589de77aba8))
+* add field upload photo ([95071bb](https://github.com/alexsandroferreira/tailwind-next-form/commit/95071bbb69981af7c1b0b9cafa1e8d880b0f1794))
+* add FileInput component ([521285d](https://github.com/alexsandroferreira/tailwind-next-form/commit/521285da16333092291928315534a133403c31cf))
+* add filelist component ([517d5ae](https://github.com/alexsandroferreira/tailwind-next-form/commit/517d5aefef297717795f8140417aca14ab3300a9))
+* add select-radix component ([b9109ef](https://github.com/alexsandroferreira/tailwind-next-form/commit/b9109efa5e6dc71aa797acd5d23f3d193218b9e3))
+* add useId and useContext in FileInput ([c7f2c2c](https://github.com/alexsandroferreira/tailwind-next-form/commit/c7f2c2ca2b1c724f01005653b3d8ff2f2b4ad5b8))
+* finished forms ([abc9ade](https://github.com/alexsandroferreira/tailwind-next-form/commit/abc9adef385c83ba2475b566dedc79b8522fb07e))
+
 ## 0.2.0 (2024-06-20)
 
 
