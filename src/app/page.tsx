@@ -5,7 +5,7 @@ import * as FileInput from './components/Form/FileInput'
 import { Select } from './components/Form/Select'
 import { SelectItem } from './components/Form/Select/SelectItem'
 import { Textarea } from './components/Form/Textarea'
-import { Input } from './components/input'
+import { Input } from './components/Input'
 import SettingsTabs from './components/SettingsTabs'
 export default function Home() {
   return (
@@ -149,51 +149,36 @@ export default function Home() {
                   <SelectItem value="md" text="Markdown" />
                 </Select>
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  <Button type="button" variant="ghost">
                     <Bold
                       className=" str h-4 w-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  </Button>
+                  <Button variant="ghost" type="button">
                     <Italic
                       className=" str h-4 w-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  </Button>
+                  <Button variant="ghost" type="button">
                     <Link
                       className=" str h-4 w-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <List
                       className=" str h-4 w-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <ListOrdered
                       className=" str h-4 w-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
+                  </Button>
                 </div>
               </div>
               <Textarea
