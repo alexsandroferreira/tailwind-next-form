@@ -1,5 +1,9 @@
-import { Mail } from 'lucide-react'
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 
+import * as FileInput from './components/Form/FileInput'
+import { Select } from './components/Form/Select'
+import { SelectItem } from './components/Form/Select/SelectItem'
+import { Textarea } from './components/Form/Textarea'
 import { Input } from './components/input'
 import SettingsTabs from './components/SettingsTabs'
 export default function Home() {
@@ -60,14 +64,14 @@ export default function Home() {
 
           <div className="grid grid-cols-form gap-3 pt-5">
             <label
-              htmlFor="firstName"
+              htmlFor="email"
               className="text-sm font-medium text-zinc-700"
             >
               Email Address
             </label>
             <Input.Root>
               <Input.Prefix>
-                <Mail className="h-5 w-5 text-zinc-500" />
+                <Mail className="str h-4 w-4 text-zinc-500" strokeWidth={3} />
               </Input.Prefix>
               <Input.Control
                 id="email"
@@ -79,15 +83,20 @@ export default function Home() {
 
           <div className="grid grid-cols-form gap-3 pt-5">
             <label
-              htmlFor="firstName"
-              className="text-sm font-medium text-zinc-700"
+              htmlFor="photoFile"
+              className="cursor-pointer text-sm font-medium text-zinc-700"
             >
               Your photo
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
                 This will be displayed on your profile.
               </span>
             </label>
-            <div className=""></div>
+
+            <FileInput.Root className="flex items-start gap-5">
+              <FileInput.ImagePreview />
+              <FileInput.Trigger />
+              <FileInput.Control />
+            </FileInput.Root>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -106,7 +115,10 @@ export default function Home() {
             >
               Country
             </label>
-            <div className=""></div>
+            <Select placeholder="Select a country...">
+              <SelectItem value="br" text="Brazil" />
+              <SelectItem value="us" text="United States" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -116,7 +128,13 @@ export default function Home() {
             >
               Timezone
             </label>
-            <div className=""></div>
+            <Select placeholder="Select a timezon...">
+              <SelectItem
+                value="utc8"
+                text="Pacific Standard Time (UTC-08:00)"
+              />
+              <SelectItem value="utc3" text="America São Paulo(UTC-03:00)" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -126,7 +144,69 @@ export default function Home() {
                 Write a short intruduction.
               </span>
             </label>
-            <div className=""></div>
+            <div className="space-y-3">
+              <div className="grid  grid-cols-2 gap-3">
+                <Select defaultValue="Normal">
+                  <SelectItem
+                    value="Normal"
+                    defaultChecked
+                    text="Normal Text"
+                  />
+                  <SelectItem value="md" text="Markdown" />
+                </Select>
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <Bold
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <Italic
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <Link
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <List
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <ListOrdered
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                </div>
+              </div>
+              <Textarea
+                id="bio"
+                defaultValue="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development."
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -139,8 +219,13 @@ export default function Home() {
                 Share a few snippets of your work.
               </span>
             </label>
-            <div className=""></div>
+            <FileInput.Root>
+              <FileInput.Trigger />
+              <FileInput.FileList />
+              <FileInput.Control multiple />
+            </FileInput.Root>
           </div>
+
           <div className="flex items-center justify-end gap-2 pt-5">
             <button
               className="rounded-lg border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-100"
