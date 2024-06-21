@@ -1,7 +1,9 @@
-import { Mail } from 'lucide-react'
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 
 import * as FileInput from './components/Form/FileInput'
 import { Select } from './components/Form/Select'
+import { SelectItem } from './components/Form/Select/SelectItem'
+import { Textarea } from './components/Form/Textarea'
 import { Input } from './components/input'
 import SettingsTabs from './components/SettingsTabs'
 export default function Home() {
@@ -69,7 +71,7 @@ export default function Home() {
             </label>
             <Input.Root>
               <Input.Prefix>
-                <Mail className="h-5 w-5 text-zinc-500" />
+                <Mail className="str h-4 w-4 text-zinc-500" strokeWidth={3} />
               </Input.Prefix>
               <Input.Control
                 id="email"
@@ -113,7 +115,10 @@ export default function Home() {
             >
               Country
             </label>
-            <Select />
+            <Select placeholder="Select a country...">
+              <SelectItem value="br" text="Brazil" />
+              <SelectItem value="us" text="United States" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -123,7 +128,13 @@ export default function Home() {
             >
               Timezone
             </label>
-            <div className=""></div>
+            <Select placeholder="Select a timezon...">
+              <SelectItem
+                value="utc8"
+                text="Pacific Standard Time (UTC-08:00)"
+              />
+              <SelectItem value="utc3" text="America São Paulo(UTC-03:00)" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -133,7 +144,69 @@ export default function Home() {
                 Write a short intruduction.
               </span>
             </label>
-            <div className=""></div>
+            <div className="space-y-3">
+              <div className="grid  grid-cols-2 gap-3">
+                <Select defaultValue="Normal">
+                  <SelectItem
+                    value="Normal"
+                    defaultChecked
+                    text="Normal Text"
+                  />
+                  <SelectItem value="md" text="Markdown" />
+                </Select>
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <Bold
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <Italic
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <Link
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <List
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className=" rounded-md p-2 hover:bg-zinc-100"
+                  >
+                    <ListOrdered
+                      className=" str h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                </div>
+              </div>
+              <Textarea
+                id="bio"
+                defaultValue="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development."
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">

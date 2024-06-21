@@ -1,10 +1,14 @@
 'use client'
 import * as SelectPrimitive from '@radix-ui/react-select'
-import { Check, ChevronDown } from 'lucide-react'
-import React from 'react'
-export function Select() {
+import { ChevronDown } from 'lucide-react'
+import type { ReactNode } from 'react'
+export interface SelectProps extends SelectPrimitive.SelectProps {
+  children: ReactNode
+  placeholder?: string
+}
+export function Select({ children, placeholder, ...props }: SelectProps) {
   return (
-    <SelectPrimitive.Root>
+    <SelectPrimitive.Root {...props}>
       <SelectPrimitive.Trigger
         className="flex
           h-11 w-full
@@ -16,7 +20,7 @@ export function Select() {
           data-[placeholder]:text-zinc-600"
       >
         <SelectPrimitive.Value
-          placeholder="Select a country..."
+          placeholder={placeholder}
           className="text-black"
         />
         <SelectPrimitive.Icon>
@@ -34,40 +38,7 @@ export function Select() {
           rounded-lg border
         border-zinc-200 bg-white"
         >
-          <SelectPrimitive.Viewport>
-            <SelectPrimitive.Item
-              value="br"
-              className="flex items-center 
-              justify-between gap-2
-              px-3
-              py-2.5
-              outline-none
-            data-[highlighted]:bg-zinc-50"
-            >
-              <SelectPrimitive.ItemText className="text-black">
-                Brazil
-              </SelectPrimitive.ItemText>
-              <SelectPrimitive.ItemIndicator className="h4 w-4 text-violet-500">
-                <Check className="h-4 w-4" />
-              </SelectPrimitive.ItemIndicator>
-            </SelectPrimitive.Item>
-            <SelectPrimitive.Item
-              value="us"
-              className="flex items-center 
-              justify-between gap-2
-              px-3
-              py-2.5
-              outline-none
-            data-[highlighted]:bg-zinc-50"
-            >
-              <SelectPrimitive.ItemText className="text-black">
-                United States
-              </SelectPrimitive.ItemText>
-              <SelectPrimitive.ItemIndicator className="h4 w-4 text-violet-500">
-                <Check className="h-4 w-4" />
-              </SelectPrimitive.ItemIndicator>
-            </SelectPrimitive.Item>
-          </SelectPrimitive.Viewport>
+          <SelectPrimitive.Viewport>{children}</SelectPrimitive.Viewport>
         </SelectPrimitive.Content>
       </SelectPrimitive.Portal>
     </SelectPrimitive.Root>
