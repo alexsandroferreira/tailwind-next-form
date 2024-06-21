@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.3.0...0.4.0) (2024-06-21)
+
+
+### Features | 🏁
+
+* **ui:** add animations to form components ([bd32843](https://github.com/alexsandroferreira/tailwind-next-form/commit/bd3284356606641d9688a34733e78874d145d0ff))
+
+
+### Bug Fixes | 🚨
+
+* **changelog:** correct typo in changelog template ([c5dd0d6](https://github.com/alexsandroferreira/tailwind-next-form/commit/c5dd0d6c59d4a44c22d4f537875ab7bba1a51236))
+
 ## [0.3.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.2.0...0.3.0) (2024-06-21)
 
 
