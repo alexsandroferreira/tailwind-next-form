@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.4.0...0.5.0) (2024-06-24)
+
+
+### Features | 🏁
+
+* add lib tailwind variants and button compenent ([e07d811](https://github.com/alexsandroferreira/tailwind-next-form/commit/e07d81115efd4bc4dd79176e5221f2ac42106099))
+* add type error in fileItem ([a268d42](https://github.com/alexsandroferreira/tailwind-next-form/commit/a268d42a63ecd5dd03101decea46948efcca7ace))
+* add variant gost in button ([4a5fb78](https://github.com/alexsandroferreira/tailwind-next-form/commit/4a5fb784a966563238fc25cfc6c66eddc909b6f3))
+* finished task variant and slot api ([1473dea](https://github.com/alexsandroferreira/tailwind-next-form/commit/1473deaaf5e5dee6e1d01b1290598cb901ef0661))
+
 ## [0.4.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.3.0...0.4.0) (2024-06-21)
 
 
