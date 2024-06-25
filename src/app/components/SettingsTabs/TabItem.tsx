@@ -31,6 +31,7 @@ export default function TabItem({
     >
       <span
         className="
+      whitespace-nowrap
       rounded group-focus-visible:ring-2
       group-focus-visible:ring-violet-400
        group-focus-visible:ring-offset-4
