@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.6.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.5.0...0.6.0) (2024-06-25)
+
+
+### Features | 🏁
+
+* add dark mode in sidebar component ([e0372d1](https://github.com/alexsandroferreira/tailwind-next-form/commit/e0372d1d1a487e45fefd7265c9ba45bff29e68dc))
+* add responsive forms ([54d5f01](https://github.com/alexsandroferreira/tailwind-next-form/commit/54d5f015ef25a9a992ad88f044615ce7610512b9))
+* add responsive sidebar ([d1681bb](https://github.com/alexsandroferreira/tailwind-next-form/commit/d1681bb0c993583839156a5acb80a3cdfec8356b))
+* fineshed dark mode forms ([dd46a48](https://github.com/alexsandroferreira/tailwind-next-form/commit/dd46a489892cb8ec3b4a44578946904147c3e79e))
+* responsive settingsTabs ([8a89c39](https://github.com/alexsandroferreira/tailwind-next-form/commit/8a89c39b7cdddf240ca5aedcdd8e20f9bb6ef511))
+
 ## [0.5.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.4.0...0.5.0) (2024-06-24)
 
 
