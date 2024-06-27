@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.6.0...0.7.0) (2024-06-27)
+
+
+### Features | 🏁
+
+* add toggle dark mode ([011761d](https://github.com/alexsandroferreira/tailwind-next-form/commit/011761dfb192f10bc4d2f2c9fa658d62382f6908))
+
 ## [0.6.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.5.0...0.6.0) (2024-06-25)
 
 
