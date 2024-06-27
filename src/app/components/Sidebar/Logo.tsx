@@ -208,7 +208,7 @@ export default function Logo() {
           </clipPath>
         </defs>
       </svg>
-      <span> Module-tailwind</span>
+      <span className="sr-only lg:inline"> Module-tailwind</span>
     </strong>
   )
 }

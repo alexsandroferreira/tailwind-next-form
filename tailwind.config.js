@@ -1,6 +1,5 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: 'class',
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
@@ -39,20 +38,24 @@ const config: Config = {
           from: { opacity: '1' },
           to: { opacity: '0' },
         },
+        moonGrow: {
+          '0%': { backgroudSize: '18px 18px' },
+          '50%': { backgroudSize: '14px 14px' },
+          '100%': { backgroudSize: '18px 18px' },
+        },
       },
 
       animation: {
         slideDonwAnFade: 'slideDonwAnFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
         slideUpAnFade: 'slideUpAnFade 1s linear',
+        moonGrow: 'moonGrow 1s linear infinite',
       },
 
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'sun-icon': "url('/src/assets/img/sun.svg')",
+        'moon-icon': "url('/src/assets/img/moon.svg')",
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar'), require('@tailwindcss/forms')],
 }
-export default config
