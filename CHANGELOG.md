@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.7.1](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.7.0...0.7.1) (2024-06-28)
+
+
+### Bug Fixes | 🚨
+
+* add script husky ([e1eb855](https://github.com/alexsandroferreira/tailwind-next-form/commit/e1eb85575fc56e7374b3b2f5b8df1565c2706de2))
+* modified props in Input component ([db5a4e7](https://github.com/alexsandroferreira/tailwind-next-form/commit/db5a4e79ae2996cd043924c2b9dd5c2747c3fe4f))
+* **toggle:** fix render in toggle component ([70b47b4](https://github.com/alexsandroferreira/tailwind-next-form/commit/70b47b4e21a3e028e836ed67df21ce78a1c1fbaf))
+
 ## [0.7.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.6.0...0.7.0) (2024-06-27)
 
 
