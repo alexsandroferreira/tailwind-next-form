@@ -14,7 +14,7 @@ import {
 } from 'lucide-react'
 
 import { Button } from '../Button'
-import { Input } from '../Input'
+import * as Input from '../Form/Input'
 import Logo from './Logo'
 import NavItem from './NavItem'
 import Profile from './Profile'

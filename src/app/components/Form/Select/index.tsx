@@ -13,9 +13,9 @@ export function Select({ children, placeholder, ...props }: SelectProps) {
         className="
           flex h-11 w-full items-center justify-between gap-2 rounded-lg border
         border-zinc-300 px-3 py-2 shadow-sm outline-none
-        focus:border-violet-300 focus:ring-2 focus:ring-violet-100
-        data-[placeholder]:text-zinc-600 dark:border-r-zinc-900
-        dark:bg-zinc-800 dark:focus-within:border-violet-500 dark:focus-within:ring-violet-500/20 dark:data-[placeholder]:text-zinc-300"
+        data-[placeholder]:text-zinc-600 focus:border-violet-300 focus:ring-2
+        focus:ring-violet-100 
+        dark:border-zinc-700 dark:bg-zinc-800 dark:focus-within:border-violet-500 dark:focus-within:ring-violet-500/20 dark:data-[placeholder]:text-zinc-300"
       >
         <SelectPrimitive.Value
           placeholder={placeholder}
