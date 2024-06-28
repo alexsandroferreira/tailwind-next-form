@@ -18,9 +18,9 @@ export default function TabItem({
       value={value}
       className="
         :px-1 group relative pb-4 text-sm font-medium 
-      text-zinc-500 outline-none hover:text-violet-700
-      data-[state=active]:text-violet-700
-      dark:text-zinc-300 dark:hover:text-violet-300 dark:data-[state=active]:text-violet-300
+      text-zinc-500 outline-none data-[state=active]:text-violet-700
+      hover:text-violet-700
+      dark:text-zinc-300 dark:data-[state=active]:text-violet-300 dark:hover:text-violet-300
       "
     >
       <span

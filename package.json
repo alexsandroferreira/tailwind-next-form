@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint --fix",
     "release:dry": "release-it --dry-run --no-npm",
-    "release": "release-it --ci --verbose"
+    "release": "release-it --ci --verbose",
+    "prepare": "husky"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
