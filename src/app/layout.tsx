@@ -3,8 +3,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import { Sidebar } from './components/Sidebar'
-import Toggle from './components/Toggle/index'
+import { Sidebar } from '../components/Sidebar'
+import Toggle from '../components/Toggle/index'
 
 const inter = Inter({ subsets: ['latin'] })
 

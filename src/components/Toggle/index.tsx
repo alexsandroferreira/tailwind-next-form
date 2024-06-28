@@ -5,24 +5,24 @@ import { Moon } from './Moon'
 import { Sun } from './Sun'
 interface LabelProps extends ComponentProps<'label'> {}
 export default function Toggle(props: LabelProps) {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return (
-        localStorage.getItem('theme') ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light')
-      )
+  const [theme, setTheme] = useState('light')
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme')
+    const prefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)',
+    ).matches
+    if (storedTheme) {
+      setTheme(storedTheme)
+    } else if (prefersDark) {
+      setTheme('dark')
     }
-    return 'light'
-  })
+  }, [])
 
   const handleToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.checked) {
-      setTheme('dark')
-    } else {
-      setTheme('light')
-    }
+    const newTheme = e.target.checked ? 'dark' : 'light'
+    setTheme(newTheme)
+    localStorage.setItem('theme', newTheme)
   }
 
   useEffect(() => {
@@ -31,7 +31,6 @@ export default function Toggle(props: LabelProps) {
     } else {
       document.documentElement.classList.remove('dark')
     }
-    localStorage.setItem('theme', theme)
   }, [theme])
 
   return (
