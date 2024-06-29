@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 *{
-@apply transition-colors duration-200
+    @apply transition-colors duration-200
+}
+body {
+    -webkit-font-smoothing: antialiased;
 }
