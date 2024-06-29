@@ -2,19 +2,17 @@
 ![](https://github.com/alexsandroferreira/tailwind-next-form/workflows/CHANGELOG%20Generator/badge.svg)
 [![Release](https://img.shields.io/github/v/release/alexsandroferreira/tailwind-next-form?color=lgreen)](https://github.com/alexsandroferreira/tailwind-next-form/releases)
 
+O projeto Forms Responsive com Next e Tailwind tem como objetivo aproveitar o conhecimento adquirido em React JS e aprimorar a estilização e a responsividade dos componentes com Tailwind.
 
-### Demo 📸
+Utilizaremos Framer Motion para implementar algumas animações.
+
+Além disso, será usada integração contínua para automatizar o versionamento de código com a biblioteca Release-it.
+
+## Demo 📸
 
 <h1 aling="center">
   <img alt="Readme-project-forms" src="./public/assets/img/app-form.gif">
-<h1>
-
-
-O projeto Forms Responsive com Next e Tailwind tem como objetivo aproveitar o conhecimento adquirido em React JS e aprimorar a estilização e a responsividade dos componentes com Tailwind.
-
- Utilizaremos Framer Motion para implementar algumas animações.
- 
-  Além disso, será usada integração contínua para automatizar o versionamento de código com a biblioteca Release-it.
+</h1>
 
 ## Adições pessoais para melhor desenvolvimento do projeto
 
@@ -51,7 +49,7 @@ Este projeto foi construído com as seguintes tecnologias:
 
 ## Instalação e configuração
 
-## Requisitos
+### Requisitos
 
 - [Node.js »](https://nodejs.org/en/download) na sua versão LTS
 - Extensão do ESlint, Tailwind CSS IntelliSense e PostCSS Language Support instalada no vs code
