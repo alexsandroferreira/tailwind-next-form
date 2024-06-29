@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.7.1...0.8.0) (2024-06-29)
+
+
+### Features | 🏁
+
+* add countrySelect componet ([ca49d79](https://github.com/alexsandroferreira/tailwind-next-form/commit/ca49d7948abd27e7f7d41091f659cdf9a60d3e72))
+
 ## [0.7.1](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.7.0...0.7.1) (2024-06-28)
 
 
