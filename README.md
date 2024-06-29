@@ -3,6 +3,13 @@
 [![Release](https://img.shields.io/github/v/release/alexsandroferreira/tailwind-next-form?color=lgreen)](https://github.com/alexsandroferreira/tailwind-next-form/releases)
 
 
+### Demo 📸
+
+<h1 aling="center">
+  <img alt="Readme-project-forms" src="./public/assets/img/app-form.gif">
+<h1>
+
+
 O projeto Forms Responsive com Next e Tailwind tem como objetivo aproveitar o conhecimento adquirido em React JS e aprimorar a estilização e a responsividade dos componentes com Tailwind.
 
  Utilizaremos Framer Motion para implementar algumas animações.
@@ -35,9 +42,10 @@ Este projeto foi construído com as seguintes tecnologias:
 - [Typescript »](https://www.typescriptlang.org)
 - [Zod »](https://zod.dev/)
 - [Eslint »](https://eslint.org/docs/latest/)
-- [Eslint »](https://github.com/lydell/eslint-plugin-simple-import-sort)
-- [@eslint-plugin-simple-import-sort »](https://github.com/Rocketseat/eslint-config-rocketseat)
+- [Eslint style guide »](https://github.com/Rocketseat/eslint-config-rocketseat)
+- [@eslint-plugin-simple-import-sort »](https://github.com/lydell/eslint-plugin-simple-import-sort)
 - [husky »](https://typicode.github.io/husky/)
+- [Tailwind »](https://tailwindcss.com/)
 - [Commitlint »](https://commitlint.js.org/)
 - [release-it »](https://github.com/release-it/release-it)
 
@@ -46,14 +54,18 @@ Este projeto foi construído com as seguintes tecnologias:
 ## Requisitos
 
 - [Node.js »](https://nodejs.org/en/download) na sua versão LTS
+- Extensão do ESlint, Tailwind CSS IntelliSense e PostCSS Language Support instalada no vs code
+
 - Extensão do ESlint instalada no vs code
+
 - Para permitir que o changelog rode automaticamente, verifique as configurações do repositório na aba Settings -> Actions -> General Workflow Permissions e marque a opção de permissões de leitura e escrita (Read and Write Permissions).
 
 ### Requisitos funcionais
 
-- [ ] Responsivdade;
-- [ ] Modo Dark;
-- [ ] Label trigger em todos inputs;
+- [x] Responsivdade;
+- [x] Modo Dark;
+- [x] Dark-mode toggle;
+- [x] Label trigger em todos inputs;
 - [x] Animações;
 
 ### Regras de negócio
@@ -65,7 +77,6 @@ Este projeto foi construído com as seguintes tecnologias:
 
 ## Instalação
 
-1. Clone o projeto: `git clone https://github.com/alexsandroferreira/fastify-node-api-template.git`.
-2. Instale as dependências: `npm install`.
+1. Clone o projeto: `git clone https://github.com/alexsandroferreira/tailwind-next-form.git`.
+2. Instale as dependências e ative husky: `npm install` e `npm prepare`.
 3. Para iniciar a aplicação execute `npm run build` e `npm run start`.
-4. Para testar aplicação sem api usar o arquivo `attendees` localizado em `data`
