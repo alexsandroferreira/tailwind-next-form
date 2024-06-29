@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.1](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.8.0...0.8.1) (2024-06-29)
+
+
+### Bug Fixes | 🚨
+
+* **readme:** typo in readme ([b69cecf](https://github.com/alexsandroferreira/tailwind-next-form/commit/b69cecf439192584cb5d3531e64f8e77f6c282ae))
+
 ## [0.8.0](https://github.com/alexsandroferreira/tailwind-next-form/compare/0.7.1...0.8.0) (2024-06-29)
 
 
